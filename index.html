@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYQ6SXQEMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BYQ6SXQEMY');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دليلك الشامل للإكسل</title>
@@ -482,11 +491,11 @@
     
         let stream = null;
         let capturedImage = null;
-        const lockCodes = ['1234', '4321', '0000', '9999', '2024']; // الرموز السرية
+        const lockCodes = ['20242025', '43211111']; // الرموز السرية
     
         
         // =====================[ حدّ الأسئلة اليومي: سؤال واحد ]=====================
-        const DAILY_LIMIT = 3;
+        const DAILY_LIMIT = 5;
         const today = new Date().toDateString();
         let qaData = JSON.parse(localStorage.getItem('qaDaily')) || { date: today, count: 0 };
     
@@ -1001,4 +1010,5 @@
     });
     </script>
     </body>
+
 </html>
